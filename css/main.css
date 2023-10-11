@@ -1,7 +1,7 @@
 /* Place CSS styles here */
 
 .front-porch {
-    background-color: #EFE3CE;
+    background-color: #ffffff;
   }
 @media (min-width: 481px) {
     .front-porch {
@@ -82,8 +82,11 @@
   body {
     color: #000;
     background-color: #efefef;
-    font-family: 'Playfair Display SC', serif;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 16px;
+    text-transform: uppercase;
   }
 
   h1 {
@@ -116,14 +119,14 @@ h5 {
 /* media query for phones */
 @media (max-width: 480px) {
   body {
-    background-color: teal;
+    background-color: rgb(157, 227, 227);
   }
 }
 
 /* media query for desktop */
 @media (min-width: 768px) {
   body {
-    background-color: peachpuff;
+    background-color: rgb(255, 255, 255);
   }
 }
 
@@ -139,10 +142,20 @@ h1,
 h2,
 h3,
 h4,
-h5,
+h5 {
+    font-family: "futura-pt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
 h6 {
-  font-family: 'Roboto Slab', serif;
-  text-transform: uppercase;
+    font-family: "adaptive-mono", monospace;
+    font-weight: 400;
+    font-size: 0.48rem;
+    font-style: normal;
+    text-align: center;
+    color: #EFE3CE;
 }
 
 input,
@@ -188,7 +201,7 @@ nav a,
 .my-button {
   display: inline-flex;
   padding: 16px;
-  border: 1px solid white;
+  border: 0px solid white;
   color: #a52a2a;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -200,7 +213,7 @@ nav a,
 nav a:hover,
 .my-button:hover {
   color: white;
-  background-color: #ffc0cb;
+  background-color: #a52a2a;
 }
 
 .my-secondary-button {
@@ -244,7 +257,7 @@ nav a:hover,
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ffa500;
+    background-color: #EFE3CE;
   }
 
 @media (max-width: 767px) {,
@@ -284,7 +297,25 @@ nav a:hover,
     background-color: floralwhite
   }
   
-.yellow-pig-logo {
-    width: 150px;
+  .yellow-pig-logo {
+    width: 250px;
   }
+  
+  .night-red-logo {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .night-blue-logo {
+    width: 350px;
+    align-self: center
+    ;
+}
+    
+
+  
+  
   
