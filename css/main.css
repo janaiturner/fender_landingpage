@@ -1,0 +1,290 @@
+/* Place CSS styles here */
+
+.front-porch {
+    background-color: #EFE3CE;
+  }
+@media (min-width: 481px) {
+    .front-porch {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .front-porch a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .front-porch a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+ 
+  .front-porch a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+ 
+  .front-porch .icon {
+    display: none;
+  }
+  
+ 
+  @media (max-width: 480px) {
+    .front-porch {
+      justify-content: space-between;
+    }
+    .front-porch a:not(:first-child) {display: none;}
+    .front-porch a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+ 
+  @media (max-width: 480px) {
+    .front-porch.responsive {position: relative;}
+    .front-porch.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .front-porch.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .l-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    border: 0;
+  }
+  
+  body {
+    color: #000;
+    background-color: #efefef;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 16px;
+  }
+
+  h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+/* media query for phones */
+@media (max-width: 480px) {
+  body {
+    background-color: teal;
+  }
+}
+
+/* media query for desktop */
+@media (min-width: 768px) {
+  body {
+    background-color: peachpuff;
+  }
+}
+
+label {
+  color: rgb(0, 0, 0);
+}
+
+p {
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
+}
+
+input,
+textarea {
+  border: 1px solid #c4c3c3;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+form {
+  max-width: 500px;
+  display: block;
+  /* width: 80%; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  text-align: center;
+}
+
+img {
+ width: 100%;
+ height: auto;
+}
+
+h2 {
+  color: rgb(135, 17, 135);
+}
+
+p {
+  color: #00c200;
+}
+
+nav a,
+.my-button {
+  display: inline-flex;
+  padding: 16px;
+  border: 1px solid white;
+  color: #a52a2a;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  text-decoration: none;
+  transition: all .25s ease;
+  width: auto;
+}
+
+nav a:hover,
+.my-button:hover {
+  color: white;
+  background-color: #ffc0cb;
+}
+
+.my-secondary-button {
+  background-color: #00c200;
+  color: #000;
+}
+
+.my-secondary-button:hover {
+  color: #00c200;
+  background-color: #000;
+}
+
+.koala-paragraph {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+.koala-featured-image-wrapper {
+  text-align: center;
+  color: #037030;
+  font-weight: 700;
+}
+
+.koala-featured-image-wrapper img {
+  border: 4px solid red;
+  max-width: 800px;
+}
+
+.koala-featured-image-image {
+  border: 4px solid #00c200;
+}
+
+.yellow-pig-main-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+.yellow-pig-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffa500;
+  }
+
+@media (max-width: 767px) {,
+    .yellow-pig-header {
+      flex-direction: column;
+      gap: 16px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  }
+
+.yellow-pig-featured-wrapper {
+    display: flex;
+    background-color: #800080;
+  }
+
+.yellow-pig-main {
+    flex: 1;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.yellow-pig-footer {
+    background-color: #000000
+  }
+
+@media (max-width: 767px) {
+    .yellow-pig-feature-items {
+      flex-direction: column;
+    }
+  }
+
+.yellow-pig-feature-item {
+    background-color: floralwhite
+  }
+  
+.yellow-pig-logo {
+    width: 150px;
+  }
+  
